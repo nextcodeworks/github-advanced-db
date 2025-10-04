@@ -2,7 +2,7 @@
 
 A production-ready, MongoDB-like database built directly on GitHub repositories. Store, query, and manage JSON/JSONL documents with atomic transactions, field-level encryption, and multi-format support. Perfect for applications needing simple, version-controlled database storage with the reliability of GitHub's infrastructure.
 
-## 🚀 Features
+## Features
 
 - **🗄️ Dual Storage Modes**: Document mode (MongoDB-style) and Collection mode (batch operations)
 - **🔄 Multi-Format Support**: JSON, JSONL, CSV, and YAML with automatic conversion
@@ -14,13 +14,13 @@ A production-ready, MongoDB-like database built directly on GitHub repositories.
 - **🔍 Automatic Sharding**: Repository size monitoring and auto-sharding
 - **📝 GitHub Native**: Leverages GitHub's version control and collaboration features
 
-## 📦 Installation
+## Installation
 
 ```bash
 npm install github-json-db
 ```
 
-## 🏁 Quick Start
+## Quick Start
 
 ```typescript
 import { GitHubDB } from 'github-json-db';
@@ -53,7 +53,7 @@ await db.set('users/alice.json', {
 const adults = await db.query('users', doc => doc.age >= 18);
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### GitHubDB Constructor Options
 
@@ -83,7 +83,7 @@ GITHUB_TOKEN=ghp_your_personal_access_token_here
 GITHUB_REPO=your-username/your-repo
 ```
 
-## 📚 API Reference
+## API Reference
 
 ### Core Database Operations
 
@@ -326,7 +326,7 @@ console.log(`Remaining requests: ${limits.remaining}`);
 console.log(`Reset time: ${new Date(limits.reset * 1000).toISOString()}`);
 ```
 
-## 🔒 Field-Level Encryption
+## Field-Level Encryption
 
 ### Hashing Options
 
@@ -358,7 +358,7 @@ const hashManager = new HashManager('your-custom-32-byte-encryption-key');
 // The library automatically generates a secure key if not provided
 ```
 
-## 🔄 Format Conversion
+## Format Conversion
 
 ### Supported Formats
 
@@ -408,7 +408,7 @@ await db.transfer('import/products.csv', 'database/products.json', {
 });
 ```
 
-## 🏗️ Storage Architecture
+## Storage Architecture
 
 ### Repository Structure
 
@@ -439,7 +439,7 @@ your-repo/
 - Best for: Append-heavy workloads, batch processing, logs
 - File extensions: `.jsonl` (recommended), `.json`
 
-## 📈 Performance Optimization
+## Performance Optimization
 
 ### Caching Strategy
 
@@ -488,7 +488,7 @@ for (let i = 0; i < largeDataset.length; i += 100) {
 }
 ```
 
-## 🛠️ Advanced Usage
+## Advanced Usage
 
 ### Custom Formatters
 
@@ -578,7 +578,7 @@ app.post('/users', async (req, res) => {
 });
 ```
 
-## 🔍 Monitoring and Debugging
+## Monitoring and Debugging
 
 ### Logging Operations
 
@@ -626,7 +626,7 @@ db.set = trackTiming('set', db.set);
 db.get = trackTiming('get', db.get);
 ```
 
-## 📋 Best Practices
+## Best Practices
 
 ### 1. Repository Organization
 - Use descriptive collection names
@@ -697,7 +697,7 @@ const safeGet = async (path) => {
 - Check token expiration
 - Ensure repository exists and is accessible
 
-## 📄 License
+## License
 
 MIT License - see LICENSE file for details.
 
@@ -705,12 +705,7 @@ MIT License - see LICENSE file for details.
 
 Contributions welcome! Please feel free to submit pull requests or open issues for bugs and feature requests.
 
-## 🆘 Support
+## Support
 
-- **Documentation**: [GitHub Repository](https://github.com/your-username/github-json-db)
-- **Issues**: [GitHub Issues](https://github.com/your-username/github-json-db/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-username/github-json-db/discussions)
-
----
-
-**GitHub JSON DB** - Simple, reliable database storage powered by GitHub repositories.
+- **Issues**: [GitHub Issues](https://github.com/Commit-DB/advanced-github-db/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Commit-DB/advanced-github-db/discussions)

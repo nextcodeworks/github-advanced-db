@@ -1,5 +1,5 @@
 {
-  "name": "github-advanced-db",
+  "name": "advanced-github-db",
   "version": "1.0.0",
   "description": "A MongoDB-like database built on GitHub repos with TypeScript support, featuring document/collection modes, format conversion, and atomic transactions",
   "main": "dist/index.js",
@@ -30,16 +30,16 @@
     "document",
     "collection"
   ],
-  "author": "Your Name <your.email@example.com>",
+  "author": "Commit-DB <diego.santana1998@proton.me>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/github-json-db.git"
+    "url": "https://github.com/Commit-DB/advanced-github-db.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/github-json-db/issues"
+    "url": "https://github.com/Commit-DB/advanced-github-db/issues"
   },
-  "homepage": "https://github.com/your-username/github-json-db#readme",
+  "homepage": "https://github.com/Commit-DB/advanced-github-db#readme",
   "engines": {
     "node": ">=16.0.0"
   },
