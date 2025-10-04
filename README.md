@@ -1,4 +1,4 @@
-# GitHub JSON DB
+# Advanced GitHub DB
 
 A production-ready, MongoDB-like database built directly on GitHub repositories. Store, query, and manage JSON/JSONL documents with atomic transactions, field-level encryption, and multi-format support. Perfect for applications needing simple, version-controlled database storage with the reliability of GitHub's infrastructure.
 
@@ -17,13 +17,13 @@ A production-ready, MongoDB-like database built directly on GitHub repositories.
 ## Installation
 
 ```bash
-npm install github-json-db
+npm install advanced-github-db
 ```
 
 ## Quick Start
 
 ```typescript
-import { GitHubDB } from 'github-json-db';
+import { GitHubDB } from 'advanced-github-db';
 
 // Initialize the database
 const db = new GitHubDB({
@@ -350,7 +350,7 @@ const user = await db.get('users/sensitive.json', {
 ### Custom Encryption Key
 
 ```typescript
-import { HashManager } from 'github-json-db';
+import { HashManager } from 'advanced-github-db';
 
 // Use custom encryption key
 const hashManager = new HashManager('your-custom-32-byte-encryption-key');
@@ -493,7 +493,7 @@ for (let i = 0; i < largeDataset.length; i += 100) {
 ### Custom Formatters
 
 ```typescript
-import { FormatConverter, Formatter } from 'github-json-db';
+import { FormatConverter, Formatter } from 'advanced-github-db';
 
 class CustomFormatter implements Formatter {
   parse(content: string): any[] {
@@ -544,7 +544,7 @@ try {
 
 ```typescript
 import express from 'express';
-import { GitHubDB } from 'github-json-db';
+import { GitHubDB } from 'advanced-github-db';
 
 const app = express();
 const db = new GitHubDB({
