@@ -1,6 +1,6 @@
 {
   "name": "advanced-github-db",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A MongoDB-like database built on GitHub repos with TypeScript support, featuring document/collection modes, format conversion, and atomic transactions",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
